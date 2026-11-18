@@ -19,7 +19,77 @@
     body { font-family:'DM Sans',sans-serif; color:var(--ink); }
     h1,h2,h3,.brand { font-family:'Manrope',sans-serif; }
     .hero-bg { background: radial-gradient(circle at 78% 35%, rgba(199,165,106,.22), transparent 29%), linear-gradient(120deg,#081e20 0%,#0b292a 60%,#174143 100%); }
-    .grid-pattern { background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px); background-size:34px 34px; }
+       .grid-pattern {
+      position: relative;
+      overflow: hidden;
+      background-image:
+        linear-gradient(rgba(199, 165, 106, 0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(199, 165, 106, 0.15) 1px, transparent 1px);
+      background-size: 34px 34px;
+    }
+
+    /* 3 Pontos luminosos com rastro correndo nas linhas de 34px */
+    .circuit-dot-h1, .circuit-dot-h2, .circuit-dot-v1 {
+      position: absolute;
+      pointer-events: none;
+      border-radius: 999px;
+      z-index: 1;
+    }
+
+    /* Pulso 1: Horizontal (esquerda -> direita na linha 102px) */
+    .circuit-dot-h1 {
+      top: 102px;
+      left: 0;
+      width: 75px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(199, 165, 106, 0.5), #fff4d2);
+      box-shadow: 0 0 10px 2px rgba(212, 175, 55, 0.85);
+      animation: circuitoDireita 7s linear infinite;
+    }
+
+    /* Pulso 2: Horizontal (direita -> esquerda na linha 272px) */
+    .circuit-dot-h2 {
+      top: 272px;
+      right: 0;
+      width: 90px;
+      height: 2px;
+      background: linear-gradient(270deg, transparent, rgba(199, 165, 106, 0.5), #fff4d2);
+      box-shadow: 0 0 10px 2px rgba(212, 175, 55, 0.85);
+      animation: circuitoEsquerda 9s linear infinite 2s;
+    }
+
+    /* Pulso 3: Vertical (cima -> baixo na coluna 170px) */
+    .circuit-dot-v1 {
+      top: 0;
+      left: 170px;
+      width: 2px;
+      height: 75px;
+      background: linear-gradient(180deg, transparent, rgba(199, 165, 106, 0.5), #fff4d2);
+      box-shadow: 0 0 10px 2px rgba(212, 175, 55, 0.85);
+      animation: circuitoBaixo 8s linear infinite 1s;
+    }
+
+    @keyframes circuitoDireita {
+      0% { transform: translateX(-100px); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateX(100vw); opacity: 0; }
+    }
+
+    @keyframes circuitoEsquerda {
+      0% { transform: translateX(100px); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateX(-100vw); opacity: 0; }
+    }
+
+    @keyframes circuitoBaixo {
+      0% { transform: translateY(-100px); opacity: 0; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { transform: translateY(680px); opacity: 0; }
+    }
+
     .eyebrow { letter-spacing:.16em; }
     .btn-primary { background:var(--yellow); color:var(--navy); transition:transform .2s,background .2s; }
     .btn-primary:hover { background:#d8bc8d; transform:translateY(-2px); }
