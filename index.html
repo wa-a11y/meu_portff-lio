@@ -325,6 +325,136 @@
         </div>
       </div>
     </section>
+
+            <!-- SEÇÃO DE CLIENTES (Padrão minimalista de alta confiança) -->
+<section id="clientes" class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-6 sm:px-12">
+    
+    <!-- Cabeçalho idêntico ao modelo: tracinho dourado + subtítulo + título -->
+    <div class="text-center">
+      <div class="inline-flex items-center justify-center gap-3">
+        <span class="h-[1.5px] w-7 bg-amber-500"></span>
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">
+          Confiança e Agilidade
+        </span>
+      </div>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">
+        Clientes que confiam na MR
+      </h2>
+    </div>
+
+    <!-- Grade + Setas Laterais -->
+    <div class="relative mt-12">
+      
+      <!-- Seta Esquerda (<) -->
+      <button onclick="mudarSlideClientes(-1)" aria-label="Clientes anteriores"
+        class="flex absolute -left-4 sm:-left-12 top-1/2 -translate-y-1/2 z-10 h-10 w-10 items-center justify-center rounded-full bg-white border border-slate-200 text-slate-600 shadow-sm transition hover:border-slate-300 hover:text-slate-900 hover:shadow cursor-pointer">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <!-- PÁGINA 1 (8 Clientes em cartões quadrados) -->
+      <div id="clientes-slide-1" class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-5">
+        
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="admpessoal.png" alt="Administração Apostólica Pessoal São João Maria Vianney" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="unimed.png" alt="Hospital Unimed" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="drbeda.png" alt="Hospital Dr. Beda" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="calebito.png" alt="Calebito" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="chillibeans.jpg" alt="Ótica Chilli Beans" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="tiptop.png" alt="Tip Top" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="Logo-anacaprioficial.png" alt="Anacapri" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="patroni.jpeg" alt="Patroni 1984" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+      </div>
+
+      <!-- PÁGINA 2 (Demais 6 Clientes em cartões quadrados) -->
+      <div id="clientes-slide-2" class="hidden grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-5">
+        
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="becca.jpg" alt="Gelateria Becca" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="donut.jpg" alt="Donuts House Bakery" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="cosecchas.png" alt="Cosechas" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="yescosmetic.jpg" alt="Yes! Cosmetics" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="maislaserdepilacao_logo.jpg" alt="Maislaser" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+        <div class="group aspect-square flex items-center justify-center rounded-xl bg-white p-6 border border-slate-100 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] transition-all duration-300 hover:shadow-[0_8px_25px_-4px_rgba(0,0,0,0.08)]">
+          <img src="callismoda.jpg" alt="Callismoda" class="max-h-[72%] max-w-[82%] object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+
+      </div>
+
+      <!-- Seta Direita (>) -->
+      <button onclick="mudarSlideClientes(1)" aria-label="Próximos clientes"
+        class="flex absolute -right-4 sm:-right-12 top-1/2 -translate-y-1/2 z-10 h-10 w-10 items-center justify-center rounded-full bg-white border border-slate-200 text-slate-600 shadow-sm transition hover:border-slate-300 hover:text-slate-900 hover:shadow cursor-pointer">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+  let slideClienteAtual = 1;
+  function mudarSlideClientes(direcao) {
+    const s1 = document.getElementById('clientes-slide-1');
+    const s2 = document.getElementById('clientes-slide-2');
+    
+    if (slideClienteAtual === 1) {
+      slideClienteAtual = 2;
+      s1.classList.add('hidden');
+      s1.classList.remove('grid');
+      s2.classList.remove('hidden');
+      s2.classList.add('grid');
+    } else {
+      slideClienteAtual = 1;
+      s2.classList.add('hidden');
+      s2.classList.remove('grid');
+      s1.classList.remove('hidden');
+      s1.classList.add('grid');
+    }
+  }
+</script>
+
   </main>
 
   <footer class="py-8 text-white" style="background:#0b1528">
