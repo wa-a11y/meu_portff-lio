@@ -19,54 +19,30 @@
     body { font-family:'DM Sans',sans-serif; color:var(--ink); }
     h1,h2,h3,.brand { font-family:'Manrope',sans-serif; }
     .hero-bg { background: radial-gradient(circle at 78% 35%, rgba(199,165,106,.22), transparent 29%), linear-gradient(120deg,#081e20 0%,#0b292a 60%,#174143 100%); }
-        .grid-pattern {
+         .grid-pattern {
       position: relative;
       overflow: hidden;
       background-image:
-        linear-gradient(rgba(199, 165, 106, 0.25) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(199, 165, 106, 0.25) 1px, transparent 1px);
+        linear-gradient(rgba(199, 165, 106, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(199, 165, 106, 0.08) 1px, transparent 1px);
       background-size: 34px 34px;
     }
 
-    .circuit-dot-h1, .circuit-dot-h2, .circuit-dot-v1 {
+    /* Único pulso luminoso na linha superior */
+    .circuit-dot-h1 {
       position: absolute;
       pointer-events: none;
       border-radius: 999px;
       z-index: 1;
-    }
-
-    /* Pulso 1: Horizontal superior (fino e curto) */
-    .circuit-dot-h1 {
       top: 102px;
       left: 0;
       width: 42px;
       height: 1.5px;
       background: linear-gradient(90deg, transparent, rgba(199, 165, 106, 0.45), #fff9e6);
       box-shadow: 0 0 8px 1px rgba(212, 175, 55, 0.8);
-      animation: circuitoDireita 6.5s linear infinite;
+      animation: circuitoDireita 7s linear infinite;
     }
 
-    /* Pulso 2: Horizontal inferior (fino e médio) */
-    .circuit-dot-h2 {
-      top: 408px;
-      right: 0;
-      width: 48px;
-      height: 1.5px;
-      background: linear-gradient(270deg, transparent, rgba(199, 165, 106, 0.45), #fff9e6);
-      box-shadow: 0 0 8px 1px rgba(212, 175, 55, 0.8);
-      animation: circuitoEsquerda 8s linear infinite 1.5s;
-    }
-
-    /* Pulso 3: Vertical cruzando a área central */
-    .circuit-dot-v1 {
-      top: 0;
-      left: 510px;
-      width: 1.5px;
-      height: 42px;
-      background: linear-gradient(180deg, transparent, rgba(199, 165, 106, 0.45), #fff9e6);
-      box-shadow: 0 0 8px 1px rgba(212, 175, 55, 0.8);
-      animation: circuitoBaixo 7s linear infinite 0.5s;
-    }
 
     @keyframes circuitoDireita {
       0% { transform: translateX(-100px); opacity: 0; }
